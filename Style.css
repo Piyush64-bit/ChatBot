@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+nav {
+    background-color: rgb(95, 95, 95);
+    color: rgb(29, 29, 29);
+    padding: 30px 10px;
+    border-radius: 10px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.chatbox {
+    background-color: #1A1A1A;
+    color: white;
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgb(95, 95, 95);
+    position: relative;
+}
+
+.box1 {
+    background-color: #2C2C2E;
+    padding: 10px;
+    border-radius: 0px 10px 10px 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.box2 {
+    background-color: #4990E2;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px 0px 10px 10px;
+    margin-top: 5px;
+    text-align: end;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+.input {
+    background-color: #121212;
+    width: 80vw;
+    margin: auto;
+    border: 1px solid rgb(95, 95, 95);
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 10px;
+}
+
+.input input{
+    width: 88%;
+    background-color: #2A2A2A;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.input button {
+    background-color: #4790E5;
+    color: white;
+    width: 10%;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.watermark {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #888;
+    padding: 10px;
+    opacity: 0.6;
+  }
