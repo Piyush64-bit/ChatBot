@@ -1,14 +1,17 @@
+/* Saara default margin/padding hata diya, clean layout ke liye */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
+/* Dark theme base styling */
 body {
     background-color: black;
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Navbar styling */
 nav {
     background-color: rgb(95, 95, 95);
     color: rgb(29, 29, 29);
@@ -18,8 +21,11 @@ nav {
     margin: auto;
     margin-top: 3vh;
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
+/* Chatbox where all messages appear */
 .chatbox {
     background-color: #1A1A1A;
     color: white;
@@ -30,30 +36,34 @@ nav {
     padding: 10px 20px;
     border-radius: 10px 10px 0px 0px;
     border: 1px solid rgb(95, 95, 95);
-    position: relative;
+    overflow-y: auto; /* Yahan se scroll add hoga jab messages zyada hon */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
+/* Bot ka message bubble (left aligned) */
 .box1 {
     background-color: #2C2C2E;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 0px 10px 10px 10px;
-    margin-top: 5px;
-    box-sizing: border-box;
-    display: inline-block;
+    max-width: 60%;
+    align-self: flex-start;
+    word-wrap: break-word;
 }
 
+/* User ka message bubble (right aligned) */
 .box2 {
     background-color: #4990E2;
-    display: inline-block;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px 0px 10px 10px;
-    margin-top: 5px;
-    text-align: end;
-    position: absolute;
-    right: 20px;
-    top: 50px;
+    max-width: 60%;
+    align-self: flex-end;
+    word-wrap: break-word;
+    color: white;
 }
 
+/* Input area neeche */
 .input {
     background-color: #121212;
     width: 80vw;
@@ -62,25 +72,28 @@ nav {
     border-top: none;
     border-radius: 0px 0px 10px 10px;
     padding: 20px 10px;
+    display: flex;
+    gap: 10px;
 }
 
-.input input{
-    width: 88%;
+/* Typing field style */
+.input input {
+    flex: 1;
     background-color: #2A2A2A;
     padding: 10px;
     color: white;
     border-radius: 10px;
     border: none;
+    font-size: 1rem;
 }
 
+/* Send button */
 .input button {
     background-color: #4790E5;
     color: white;
-    width: 10%;
     padding: 10px 25px;
     border: none;
-    border-radius: 10px;
-    margin-left: 10px;
+    border
 }
 
 .watermark {
