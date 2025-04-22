@@ -127,7 +127,7 @@ nav {
         width: 95vw;
     }
 
-    .chatbox, .input {
+    .chatbox {
         width: 95vw;
         margin-top: 3vh;
     }
@@ -138,9 +138,11 @@ nav {
     }
 
     .input {
+        width: 95vw;
         flex-direction: column;
         gap: 10px;
         padding: 15px;
+        margin-bottom: 1vh;
     }
 
     .input input {
@@ -157,5 +159,6 @@ nav {
     footer.watermark {
         font-size: 0.7rem;
         padding: 5px;
+        margin-bottom: 1vh;
     }
 }
