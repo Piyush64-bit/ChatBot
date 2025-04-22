@@ -42,6 +42,7 @@ nav {
     gap: 10px;
 }
 
+
 /* Bot ka message bubble (left aligned) */
 .box1 {
     background-color: #2C2C2E;
@@ -87,15 +88,29 @@ nav {
     font-size: 1rem;
 }
 
+/* Glow effect on input */
+.input input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4790E5;
+}
+
 /* Send button */
 .input button {
     background-color: #4790E5;
     color: white;
     padding: 10px 25px;
     border: none;
-    border
+    border-radius: 10px;
 }
 
+/* Hover effect for the send button */
+.input button:hover {
+    background-color: #1E7AE5;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* The OG watermark */
 .watermark {
     text-align: center;
     font-size: 0.8rem;
@@ -103,3 +118,44 @@ nav {
     padding: 10px;
     opacity: 0.6;
   }
+
+  /* Responsiveness ADDED */
+  @media (max-width: 600px) {
+    nav {
+        font-size: 1.5rem;
+        padding: 20px 5px;
+        width: 95vw;
+    }
+
+    .chatbox, .input {
+        width: 95vw;
+        margin-top: 3vh;
+    }
+
+    .box1, .box2 {
+        max-width: 85%;
+        font-size: 0.9rem;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .input input {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .input button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    footer.watermark {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
